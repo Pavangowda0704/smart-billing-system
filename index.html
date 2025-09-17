@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Cart Billing System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#007BFF',
+                '50': '#E6F2FF',
+                '100': '#CCE5FF',
+                '200': '#99CBFF',
+                '300': '#66B2FF',
+                '400': '#3398FF',
+                '500': '#007BFF',
+                '600': '#0062CC',
+                '700': '#004A99',
+                '800': '#003166',
+                '900': '#001933',
+              },
+            },
+            keyframes: {
+              'gate-open': {
+                '0%': { transform: 'scaleX(1)' },
+                '100%': { transform: 'scaleX(0)' },
+              },
+              'scan-line': {
+                '0%, 100%': { top: '0%' },
+                '50%': { top: '100%' },
+              },
+            },
+            animation: {
+              'gate-open': 'gate-open 1s ease-in-out forwards',
+              'scan-line': 'scan-line 2s ease-in-out infinite',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Smart Cart Billing System",
+  "description": "A modern, responsive frontend for an Automatic Smart Billing System. Users can register carts, scan products using their device camera, manage their cart, and proceed through a simulated checkout and payment process.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
